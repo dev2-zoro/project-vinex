@@ -1,0 +1,42 @@
+.questions {
+  padding: 64px 0;
+  &-list {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 24px;
+    @media (max-width: 676px) {
+      column-gap: 12px;
+      row-gap: 12px;
+      margin: 0;
+      .questions-item p {
+        max-width: 90%;
+      }
+    }
+  }
+  &-item {
+    max-width: 636px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: $bg-primary;
+
+    p {
+      @include text(500, 16px, 24px, $gray);
+      margin-bottom: 0;
+    }
+    @media (max-width: 1400px) {
+      max-width: 550px;
+    }
+    @media (max-width: 1220px) {
+      max-width: 440px;
+    }
+    @media (max-width: 676px) {
+      padding: 12px;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}

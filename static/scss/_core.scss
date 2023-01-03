@@ -1,0 +1,23 @@
+body {
+  font-family: 'Roboto';
+  font-style: normal;
+}
+
+.btn {
+  max-width: 220px;
+  border: none;
+  @include text(500, 14px, 20px, $gray);
+  padding: 14px 0;
+  @media (max-width: 992px) {
+    max-width: 164px;
+    padding: 6px 0;
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+}
+
+.btn-secondary {
+  background-color: $bg-secondary;
+}

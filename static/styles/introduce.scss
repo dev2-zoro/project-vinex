@@ -1,0 +1,53 @@
+.introduction {
+  padding: 60px 0;
+  background-color: $bg-primary;
+  &-left {
+    @media (max-width: 992px) {
+      margin-bottom: 32px;
+    }
+  }
+  &-content {
+    max-width: 464px;
+    height: 100%;
+    h1 {
+      @include text(500, 48px, 59px, $black);
+    }
+    p {
+      margin-top: 8px;
+      margin-bottom: 32px;
+      @include text(400, 16px, 24px, #51525c);
+    }
+    @media (max-width: 676px) {
+      max-width: 100%;
+      h1 {
+        max-width: 90%;
+        font-size: 24px;
+        line-height: 32px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  &-image {
+    max-height: 398px;
+    img {
+      max-width: 530px;
+    }
+    @media (max-width: 1200px) {
+      img {
+        max-width: 440px;
+      }
+    }
+    @media (max-width: 676px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 95%;
+      }
+    }
+  }
+}

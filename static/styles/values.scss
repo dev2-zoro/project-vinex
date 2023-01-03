@@ -1,0 +1,32 @@
+.values {
+  padding: 64px 0;
+  &-content {
+    margin-top: 60px;
+  }
+  &-item {
+    &__image {
+      img {
+        max-width: 336px;
+        @media (max-width: 676px) {
+          max-width: 100%;
+        }
+      }
+    }
+    &__title {
+      margin-top: 16px;
+      p {
+        @include text(500, 20px, 24px, $black);
+      }
+    }
+    &__text {
+      max-width: 384px;
+      p {
+        @include text(400, 14px, 20px, $secondary);
+        margin-bottom: 0;
+      }
+      @media (max-width: 992px) {
+        max-width: 100%;
+      }
+    }
+  }
+}

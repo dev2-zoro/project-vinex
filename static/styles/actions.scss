@@ -1,0 +1,26 @@
+.actions {
+  padding: 64px 0;
+  background-color: $bg-primary;
+  @media (max-width: 676px) {
+    padding: 24px 0;
+  }
+  .title {
+    margin-bottom: 40px;
+    @media (max-width: 676px) {
+      margin-bottom: 0;
+    }
+  }
+  .btn {
+    width: 220px;
+    margin-bottom: 64px;
+    @media (max-width: 676px) {
+      margin-bottom: 24px;
+    }
+  }
+  &-background {
+    width: 100%;
+    img {
+      max-width: 100%;
+    }
+  }
+}
