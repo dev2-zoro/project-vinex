@@ -63,9 +63,9 @@ export default {
 <style lang="scss" scoped>
 .footer-home {
   display: flex;
-  position: absolute;
+//   position: absolute;
   width: 100%;
-  height: 421px;
+  height: 350px;
   bottom: 0px;
   background: #ffffff;
   justify-content: center;

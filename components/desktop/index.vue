@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="ctn-home">
     <headerHome></headerHome>
     <p>desktop</p>
     <footerHome></footerHome>
@@ -14,3 +14,8 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+.ctn-home{
+  
+}
+</style>

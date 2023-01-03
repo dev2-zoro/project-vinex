@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
+//   position: absolute;
   width: 100%;
   height: 80px;
   top: 0px;
