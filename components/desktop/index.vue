@@ -1,13 +1,13 @@
 <template>
   <div class="ctn-home">
-    <headerHome></headerHome>
+    <headerHome/>
     <Introduction />
     <Values />
     <Partners />
     <Questions />
     <Deal />
     <Actions />
-    <footerHome></footerHome>
+    <footerHome/>
   </div>
 </template>
 <script>
