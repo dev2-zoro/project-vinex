@@ -12,6 +12,9 @@ body {
     max-width: 164px;
     padding: 6px 0;
   }
+  &:active {
+    background-color: $primary;
+  }
 }
 
 .btn-primary {
