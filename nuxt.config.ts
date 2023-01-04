@@ -1,7 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
  modules: [
    '@nuxtjs/device',
+   '@pinia/nuxt'
   ],
   app: {
     head: {
@@ -37,5 +39,5 @@ export default defineNuxtConfig({
         }
       }
     }
-  }
+  },
 })
