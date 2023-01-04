@@ -3,7 +3,7 @@
     <div class="ctn-logo">
       <img class="logo" src="~/assets/images/ic-logo.png" />
     </div>
-    <div class="ctn-btn" @click="inc">Liên kết ví</div>
+    <button class="btn btn-primary ctn-btn" @click="inc">Liên kết ví</button>
   </div>
 </template>
 <script>
