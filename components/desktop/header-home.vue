@@ -11,8 +11,9 @@ import { ref, computed, watch } from "vue";
 import { useCounterStore } from '~/stores/counter'
 export default {
   setup() {
+    /* ------------------store--------------- */
     const counterStore = useCounterStore()
-    console.log(counterStore.doubleCount); //
+    console.log(counterStore.counter);
     /* ---------------------------------------------------- */
     let count = ref(0);
     const countDouble = computed(() => count.value * 2);
@@ -20,6 +21,7 @@ export default {
       console.log("count changed", newVal);
     });
     const inc = () => {
+      counterStore.increment()
       count.value += 1;
     };
     const dec = () => {
