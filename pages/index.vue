@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div  name="default">
     <desktop v-if="$device.isDesktop" />
     <mobile v-else/>
   </div>
