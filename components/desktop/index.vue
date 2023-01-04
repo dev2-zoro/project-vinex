@@ -33,5 +33,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .ctn-home {
+  position: relative;
 }
 </style>

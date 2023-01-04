@@ -3,9 +3,7 @@
     <div class="ctn-logo">
       <img class="logo" src="~/assets/images/ic-logo.png" />
     </div>
-    <div class="ctn-btn">
-      <p class="txt-btn">Liên kết ví</p>
-    </div>
+    <div class="ctn-btn">Liên kết ví</div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -13,7 +11,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-//   position: absolute;
   width: 100%;
   height: 80px;
   top: 0px;
@@ -35,14 +32,12 @@
     height: 48px;
     background: #faac2e;
     border-radius: 8px;
-    :hover{
-        cursor: pointer;
-    }
-    .txt-btn {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 20px;
-      color: #18181b;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #18181b;
+    :hover {
+      cursor: pointer;
     }
   }
 }
