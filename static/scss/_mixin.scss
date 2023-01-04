@@ -1,0 +1,8 @@
+@mixin text($fw, $fs, $lh, $cl) {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $cl;
+}

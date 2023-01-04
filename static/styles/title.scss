@@ -1,0 +1,22 @@
+.title {
+  h2 {
+    @include text(500, 32px, 44px, $gray);
+    margin-bottom: 12px;
+  }
+  p {
+    @include text(400, 16px, 24px, #51525c);
+    margin-bottom: 0;
+  }
+  @media (max-width: 676px) {
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0 auto;
+      max-width: 85vw;
+    }
+  }
+}

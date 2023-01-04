@@ -1,0 +1,49 @@
+.partners {
+  padding: 80px 0;
+  background-color: $bg-primary;
+  &-content {
+    margin-top: 40px;
+    height: 280px;
+    position: relative;
+    @media (max-width: 1200px) {
+      height: 320px;
+    }
+    @media (max-width: 992px) {
+      height: auto;
+    }
+  }
+  &-item {
+    &__title {
+      margin-top: 24px;
+      margin-bottom: 12px;
+      p {
+        @include text(500, 20px, 28px, $black);
+      }
+    }
+    &__text {
+      p {
+        @include text(400, 14px, 20px, $secondary);
+      }
+    }
+    &__button {
+      width: 110px;
+      height: 40px;
+      position: absolute;
+      bottom: 0;
+      margin-top: 12px;
+      p {
+        @include text(500, 14px, 20px, $gray);
+        margin-bottom: 0;
+      }
+      @media (max-width: 992px) {
+        position: relative;
+      }
+    }
+  }
+  .swiper {
+    margin-top: 43px;
+  }
+  @media (max-width: 676px) {
+    padding: 36px 0;
+  }
+}
