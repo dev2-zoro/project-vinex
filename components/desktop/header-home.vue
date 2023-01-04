@@ -2,17 +2,25 @@
   <div class="header-home">
     <div class="ctn-logo">
       <img class="logo" src="~/assets/images/ic-logo.png" />
+      <div class="ctn-menu">
+        <p class="txt-menu">Giao dịch</p>
+        <img class="ic-arrow" src="~/assets/icons/arrow.svg" alt="" />
+      </div>
+      <div class="ctn-menu">
+        <p class="txt-menu">Hỗ trợ</p>
+        <img class="ic-arrow" src="~/assets/icons/arrow.svg" alt="" />
+      </div>
     </div>
     <button class="btn btn-primary ctn-btn" @click="inc">Liên kết ví</button>
   </div>
 </template>
 <script>
 import { ref, computed, watch } from "vue";
-import { useCounterStore } from '~/stores/counter'
+import { useCounterStore } from "~/stores/counter";
 export default {
   setup() {
     /* ------------------store--------------- */
-    const counterStore = useCounterStore()
+    const counterStore = useCounterStore();
     console.log(counterStore.counter);
     /* ---------------------------------------------------- */
     let count = ref(0);
@@ -21,7 +29,7 @@ export default {
       console.log("count changed", newVal);
     });
     const inc = () => {
-      counterStore.increment()
+      counterStore.increment();
       count.value += 1;
     };
     const dec = () => {
@@ -45,7 +53,7 @@ export default {
       countDouble,
       msg,
       changeMessage,
-      counterStore
+      counterStore,
     };
   },
 };
@@ -61,10 +69,30 @@ export default {
   background: #ffffff;
   border-bottom: 1px solid #f4f4f5;
   .ctn-logo {
+    display: flex;
+    flex-direction: row;
     margin-left: 24px;
     .logo {
       width: 122px;
       height: 32px;
+      margin-right: 90px;
+    }
+    .ctn-menu {
+      display: flex;
+      align-items: center;
+      margin-left: 25px;
+      .txt-menu {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #18181b;
+        margin-bottom: 0rem;
+      }
+      .ic-arrow {
+        margin-left: 6px;
+        width: 12px;
+        height: 12px;
+      }
     }
   }
   .ctn-btn {
